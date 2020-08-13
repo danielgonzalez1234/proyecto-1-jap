@@ -7,47 +7,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <title>eMercado - Todo lo que busques está aquí</title>
-
+<!-- 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <!-- Bootstrap core CSS -->
+ Bootstrap core CSS 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <style>
-    html, body{
-      height: 100%;
-    }
+  <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+-->
 
-    body {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-align: center;
-      align-items: center;
-      padding-top: 40px;
-      padding-bottom: 40px;
+  <style>
+    html{
       background-color: #f5f5f5;
     }
-
-    .signin {
+    body {
+    
+     /* display: -ms-flexbox;
+      display: flex;
+      /*-ms-flex-align: center;*/
+      /*align-items: center;*/
+      /*padding-top: 40px;
+      padding-bottom: 40px;*/
+     
+    }
+    .CuadroDeLogin{
+      display: flex;
+      align-items: center;
+      flex-direction: column; 
+      justify-content: center;
       width: 100%;
-      max-width: 330px;
-      padding: 15px;
+      min-height: 100%;
+      padding: 20px;
+    }
+    .textos{
+      -webkit-border-radius: 10px 10px 10px 10px;
+      border-radius: 10px 10px 10px 10px;
+      background: #fff;
+      padding: 30px;
+      width: 90%;
+      max-width: 450px;
+      position: relative;
+      padding: 0px;
+      -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+      box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    img{
+/*width: 60%;*/
+      display: block;
       margin: auto;
+      -webkit-border-radius: 10px 10px 10px 10px;
+      border-radius: 10px 10px 10px 10px;
+      background: #fff;
+      width: 30%;
+      max-width: 400px;
+      -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+      box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     }
   </style>
 </head>
 
-<body class="text-center">
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 1 (Fecha de entrega: 16/08/2020) -> Punto 3 y 4.</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+<body>
+  <!-- https://bootsnipp.com/snippets/dldxB  -->
+  <!-- se uso como marco de referecia el siguiente enlace--> 
+<form action="inicio">
+  <div class="CuadroDeLogin">
+    <!--Icono-->
+    <div class="IconoLogin">
+      <img src="doc/iconologin.png" id="icono"/>
+      <p></p>
     </div>
-  </div>
+    <!--contenido, cuadro de textos y mensajes-->
+    <div class="textos">
+      <form class="form-signin"></form>
+      <h1 class="h3 mb-3 font-weight-normal">Por favor, ingrese su Usuario</h1>
+      <!--mail-->
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <!--contraseña-->
+      <p></p>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <!--boton de login-->
+      <p></p>
+      <button class="btn btn-lg btn-primary btn-block" onclick type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+    </div>   
+  </div> 
+</form>
+
 
   <script src="js/init.js"></script>
   <script src="js/login.js"></script>
+
 </body>
 </html>
