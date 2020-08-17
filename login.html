@@ -22,16 +22,7 @@
     html{
       background-color: #f5f5f5;
     }
-    body {
-    
-     /* display: -ms-flexbox;
-      display: flex;
-      /*-ms-flex-align: center;*/
-      /*align-items: center;*/
-      /*padding-top: 40px;
-      padding-bottom: 40px;*/
-     
-    }
+
     .CuadroDeLogin{
       display: flex;
       align-items: center;
@@ -68,10 +59,15 @@
     }
   </style>
 </head>
+<!-- cambios de entrega 1 -->
+<!--  Realizar una pantalla de autenticación, de forma tal que la misma 
+  sea el inicio del sitio (en vez de la portada donde se muestra 
+  el listado de categorías). Aquí podrás encontrar algún ejemplo.-->
+<!-- https://bootsnipp.com/snippets/dldxB  --> 
+<!-- se uso como marco de referecia el siguiente enlace--> 
 
 <body>
-  <!-- https://bootsnipp.com/snippets/dldxB  -->
-  <!-- se uso como marco de referecia el siguiente enlace--> 
+
 <form action="inicio">
   <div class="CuadroDeLogin">
     <!--Icono-->
@@ -84,23 +80,25 @@
       <form class="form-signin"></form>
       <h1 class="h3 mb-3 font-weight-normal">Por favor, ingrese su Usuario</h1>
       <!--mail-->
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputEmail" class="sr-only">Direccion de Email</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
       <!--contraseña-->
       <p></p>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <label for="inputPassword" class="sr-only">Contraseña</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
       <!--boton de login-->
       <p></p>
-      <button class="btn btn-lg btn-primary btn-block" onclick type="submit">Sign in</button>
+      <button class="btn btn-lg btn-primary btn-block" onclick="direccion(8)" type="submit">Ingresar</button>
+     <!-- <div class="g-signin2" data-onsuccess="BotonEntrar()"></div>-->
       <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
     </div>   
   </div> 
 </form>
 
-
   <script src="js/init.js"></script>
   <script src="js/login.js"></script>
+  <!-- configurar una redireccionamiento exitoso-->
+  <script> src="redirecciones.js"</script>
 
 </body>
 </html>
